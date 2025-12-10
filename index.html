@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mayur Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class=" text-white">
+
+    <!-- Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light position-fixed top-0 p-3"
+            style="width: 100%; border: 15px solid #141313; border-radius: 30px; z-index: 1000;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><b>
+                        <h3 class="name">MAYUR THIGALE</h3>
+                    </b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item"><a class="nav-link active pe-4" href="#index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link pe-4" href="#about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link pe-4" href="#education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link pe-4" href="#projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link pe-4" href="#contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Home Section  ---------------------------------------- -->
+
+    <section class="h-section py-1" id="index.html">
+    </section>
+    <section class="home-section" style="margin-top: 100px;">
+        <div class="container mt-2 ">
+            <div class="row">
+                <div class="hii col-md-12"><br>
+                    <h6 class="text-warning">HELLO..!!</h6>
+                    <h1 class="mayur mb-4 mt-3 " data-aos="fade-right" data-aos-duration="3000">I'm <span class="text-warning"><b><i class="ms-2">Mayur
+                                    Thigale</i></b></span></h1>
+                    <br>
+
+
+                    <!-- ------------------- ------------------------------------------------->
+                    <div class="type">
+
+                        <!-- Element to contain animated typing -->
+                        <span id="typing-animation"></span>
+
+                        <script>
+
+                            // Initialize the typing animation
+                            const typingAnimationElement = document.getElementById('typing-animation');
+
+                            // Create an array of typing text
+                            const typingTexts = [
+                                'WEB DEVLOPER...  ',
+                                'MERN DEVLOPER...  ',
+                                'REACT DEVLOPER...   ',
+                            ];
+
+                            // Create a function to display the typing animation for a given text
+                            function playTypingAnimation(text) {
+                                // Loop through each character and add it to the element
+                                for (let i = 0; i < text.length; i++) {
+                                    setTimeout(() => {
+                                        typingAnimationElement.textContent += text[i];
+                                    }, i * 200); // Increase the delay to slow down the typing animation
+                                }
+
+                                // Once the animation is complete, reset the text and start over
+                                setTimeout(() => {
+                                    typingAnimationElement.textContent = '';
+                                    playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                }, text.length * 200);
+                            }
+
+                            // Start the typing animation loop
+                            playTypingAnimation(typingTexts[0]);
+
+                        </script>
+                    </div>
+                    <br>
+                    <!-- ----------------------------------------------------------------------- -->
+
+                    <h3 class="heading">To pursue a challenging career
+                        and be a part of progressive organization that gives a scope to
+                        enhance my knowledge, utilize my skills towards the growth of the solve challenging problems in
+                        a
+                        creative and effective manner.</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--  About Section --------------------------------------------- -->
+
+    <section class="about-section py-5" id="about.html">
+        <br></br>
+        <h1 class="mb-4 mt-3 text-center">ABOUT ME..!!</h1>
+        <hr>
+
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+                <div class="col-md-6  p-3">
+                    <div class="row">
+                        <div class="col-md-5  p-3">
+                            <img src="./assets/mayur.jpg" alt="my image" class="h-100 w-100 border rounded-5 " />
+                        </div>
+
+                        <div class="col-md-7  pt-4">
+                            <p class="text-secondary"><b class="text-white">Name:</b> Mayur Thigale.</p>
+                            <p class="text-secondary"><b class="text-white">Profession:</b> Web Developer.</p>
+                            <p class="text-secondary"><b class="text-white">Skills:</b> HTML, CSS, Bootstrap,
+                                JavaScript.
+                            </p>
+                            <p class="text-secondary">
+                                <b class="text-white">Bio:</b> A passionate web developer dedicated to creating
+                                dynamic and user-friendly websites.
+                            </p>
+                        </div>
+                    </div>
+                    <h4 class="pt-5 pb-2">SKILLS :</h4>
+                    <p class="mb-0">HTML:</p>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar-striped progress-bar-animated bg-info w-100"></div>
+                    </div>
+                    <p class="mb-0">CSS:</p>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar-striped progress-bar-animated bg-info w-100"></div>
+                    </div>
+                    <p class="mb-0">Bootstrap:</p>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar-striped progress-bar-animated bg-info w-75"></div>
+                    </div>
+                    <p class="mb-0">JavaScript:</p>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar-striped progress-bar-animated bg-info w-50"></div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 ">
+
+                    <!-- <h4 class="display-4 p-3"><b>ABOUT ME</b></h4> -->
+                    <p class="para p-3 text-secondary mt-3">
+                        I am Mayur Thigale, a passionate web developer dedicated to creating
+                        dynamic and user-friendly websites. With expertise in HTML, CSS,
+                        JavaScript, and various web development frameworks, I strive to
+                        deliver high-quality solutions that meet client needs and enhance
+                        user experience. My goal is to continuously learn and grow in the
+                        ever-evolving field of web development, staying updated with the
+                        latest trends and technologies.
+
+                    <h4 class="p-3 mt-4">ADDITIONAL INFORMATION :</h4>
+
+                    <p class="ms-3 text-secondary mt-4"><b class="text-white">Certification:</b> MERN Stack
+                        Certification.
+                    </p>
+                    <p class="ms-3 text-secondary mt-4"><b class="text-white">Certification:</b> Microsoft Azure
+                        Certification.
+                    </p>
+
+                    <p class="ms-3 text-secondary mt-4"><b class="text-white">Hobbies:</b> Reading, Traveling, Coding.
+                    </p>
+                    <p class="ms-3 text-secondary mt-4"><b class="text-white">Languages:</b> English, Hindi, Marathi.
+                    </p>
+                    <p class="ms-3 text-secondary mt-4"><b class="text-white">Location:</b> Pune, India.</p>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <!--  Education Section------------------------------------------- -->
+
+    <section class="education-section py-5" id="education.html">
+        <br></br>
+        <h1 class="mb-4 mt-3 text-center">EDUCATION..!!</h1>
+        <hr>
+
+
+
+        <div class="container py-3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <div class="card" style="width: 100%; background-color: #282a2c;">
+                        <div class="card-body">
+                            <h2><span class="text-secondary"><b>Master's in Computer Science.</b></span></h2>
+                            <h4 class="text-warning"><b>2023 - 2025</b></h4><br>
+                            <h5 class="text-light">Prof. Ramkrishna More College, Akurdi.</h5>
+                            <p class="text-light" style="text-align: justify;">Currently completed my master's degree in
+                                computer science, focusing on advanced topics such as artificial intelligence, machine
+                                learning, and data science. Engaged in research projects that aim to solve real-world
+                                problems using innovative technologies.</p>
+                            <h4 class="text-light"><b>SGPA : </b> 8.68.</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="card" style="width: 100%; background-color: #282a2c;">
+                        <div class="card-body">
+                            <h2><span class="text-secondary"><b>Bachelor's in Computer Science.</b></span></h2>
+                            <h4 class="text-warning"><b>2020 - 2023</b></h4><br>
+                            <h5 class="text-light">Hutatma Rajguru Mahavidhyalaya, Rajgurunagar.</h5>
+                            <p class="text-light" style="text-align: justify;">Completed my bachelor's degree in
+                                computer science, focusing on advanced topics such as artificial intelligence, machine
+                                learning, and data science. Engaged in research projects that aim to solve real-world
+                                problems using innovative technologies.</p>
+                            <h4 class="text-light"><b>CGPA :</b> 7.64.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Projects Section----------------------------------- -->
+    <section class="project-section py-5" id="projects.html">
+        <br></br>
+        <h1 class="mb-4 mt-3 text-center">PROJECTS..!!</h1>
+        <hr>
+
+
+
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="pname text-warning">Students Management System.</h2><br>
+                    <ul>
+                        <li>
+                            <p class="para" style="text-align: justify;">A student management system is a software
+                                application
+                                designed to efficiently manage student
+                                information. It can include features like student registration, attendance tracking,
+                                grade
+                                management, fee payments, and generating reports.!</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;">This system saves the time of the student and
+                                of the
+                                administrator. It includes processes like registration of the student’s details,
+                                assigning the department based on their course, and maintenance of the record.</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;">Technology Used: HTML, CSS, Bootstarp,
+                                JavaScript, React,
+                                Angular.</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;"><button
+                                    class="btn btn-outline-warning text-white"><a
+                                        href="https://github.com/mayurthigale2002/my-project"
+                                        style="text-decoration: none;">Get More
+                                        Information On Github..</a></button></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/Student-Management-System.webp" class="img-fluid" alt="Interior design"
+                        style="height: 300px; width: 600px; border: 5px solid rgb(82, 72, 72); border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="project-section py-5">
+        <div class="container py-5" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+                <div class="col-md-6" >
+                    <img src="./assets/society management system.png" class="img-fluid" alt="Interior design"
+                        style="height: 300px; width: 600px; border: 5px solid rgb(82, 72, 72); border-radius: 20px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="pname text-warning">Society Management System.</h2><br>
+                    <ul>
+                        <li>
+                            <p class="para" style="text-align: justify;">A society management system is a software
+                                application
+                                designed to efficiently manage the operations of a residential society. It can include
+                                features like member registration, fee collection, event management, complaint handling,
+                                and communication with residents.</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;">This system streamlines the administrative
+                                tasks of the
+                                society, making it easier for the management to keep track of various activities and
+                                maintain records.</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;">Technology Used: HTML, CSS, Bootstarp,
+                                JavaScript, React,
+                                Angular.</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;"><button
+                                    class="btn btn-outline-warning text-white "><a
+                                        href="https://github.com/mayurthigale2002/Society-Management-System-main"
+                                        style="text-decoration: none;">Get More
+                                        Information On Github..</a></button></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CERTIFICATION section----------------------------------- -->
+
+
+    <br></br>
+    <h1 class="mb-4 mt-3 text-center">CERTIFICATION..!!</h1>
+    <hr>
+
+
+    <section class="certification-section py-4">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="pname text-warning">Microsoft Azure Certification (AZ-900).</h2><br>
+                    <ul>
+                        <li>
+                            <p class="para" style="text-align: justify;">The Microsoft Azure Fundamentals (AZ-900)
+                                certification is
+                                an excellent starting point for
+                                anyone beginning their cloud computing journey. It provides a strong understanding of
+                                basic
+                                cloud concepts, Azure services, pricing, security, and governance. Designed for
+                                beginners,
+                                it requires no prior technical experience and helps both technical and non-technical
+                                professionals gain confidence in using and explaining Azure’s capabilities.</p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;">The certification covers a wide range of
+                                topics, including
+                                cloud concepts, core Azure services, security, compliance, and pricing. It is ideal for
+                                individuals looking to establish a foundational understanding of Azure and its services.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="para" style="text-align: justify;">The certification is suitable for individuals
+                                in various
+                                roles, including IT professionals, project managers, and business stakeholders, who want
+                                to understand Azure's capabilities and how it can benefit their organizations.</p>
+                        </li>
+                    </ul>
+                    <p style="text-align: justify;"></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section----------------------------------- -->
+    <section class="contact-section py-5" id="contact.html">
+        <br></br>
+        <h1 class="mb-4 mt-3 text-center font-BBH Sans Bartle">CONTACT ME..!!</h1>
+        <p class="text-center text-secondary">Below are the details to reach out to me!</p>
+        <hr style="border: 2px solid rgb(199, 206, 75); margin-left: 50px; margin-right: 50px;">
+
+        <div class="container py-5" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>ADDRESS</h3><br>
+                    <p class="text-secondary text-center">Pune, Maharashtra</p>
+                </div>
+
+                <div class="col-md-4 text-center" >
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>CONTACT NO.</h3><br>
+                    <p class="text-secondary text-center">+91 8600832098</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>EMAIL ADDRESS</h3><br>
+                    <p class="text-secondary text-center">mayurthigale2002@gmail.com</p>
+                </div>
+
+
+                <div class="button text-center mt-5"  data-aos="flip-right">
+                    <a href="./Mayur_Thigale_Resume.pdf" download
+                        class="btn btn-outline-warning text-white w-25">Download
+                        Resume</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------  -->
+
+    <section class="project-section py-5">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <!-- logo -->
+                    <h2 class="text-warning">Find me on..!!</h2>
+                    <p class="text-secondary text-center mb-5">Feel free to connect with me on social media platforms.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mayur.thigale.18/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/mayur_thigale_9331/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mayur-thigale-14b8312b1/"><i
+                                class="fa-brands fa-square-linkedin"></i></a>
+                        <a href="https://github.com/mayur-thigale"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.youtube.com/@mayurthigalepatil9331"><i
+                                class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----------------------------------------- -->
+
+    <section class="footer-section py-3">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <!-- logo -->
+                    <h3 class="text-warning mt-5 mb-0">Thank You For Visiting My Portfolio..!!</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p class="text-center">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <hr>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
